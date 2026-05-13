@@ -16,6 +16,7 @@ For Hadoop:
 ```
 /nn/bin/python gen_tb.py > all.tb
 ```
+And move it to hdfs
 2. Then run process
 ```
 hadoop-streaming-raw --input /BespaytyyIV/project/all.tb --output /BespyatyyIV/output_project --mapper "/nn/bin/python mapper.py"
